@@ -8,7 +8,7 @@ var termToRgb = function(term) {
     g = r;
     b = r;
   } else if (term > 15) {
-    b = Math.max(0, (term - 16) % 6);
+    b = Math.max(0, (term - 16) % 6);              //
     g = Math.max(0, (term - 16 - b) / 6 % 6);
     r = Math.max(0, (term - 16 - b - 6 * g) / 36);
     r *= 51;
